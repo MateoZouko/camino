@@ -1,4 +1,4 @@
-# Theatre Play PDF Viewer
+# Camino a Kafka
 
 This is a simple PDF viewer designed specifically for viewing a PDF file for a theatre play. It provides a user-friendly interface for navigating through the pages of the play program and offers additional features to enhance the reading experience.
 
