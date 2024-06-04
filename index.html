@@ -8,21 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            background-image: 'fondo.jpg';
             padding: 0;
         }
         .container {
-            width: 80%; /* Reducido al 80% del ancho de la ventana gráfica */
-            max-width: 800px; /* Ancho máximo para evitar que el PDF se estire demasiado en pantallas grandes */
-            height: 100vh;
+            width: 80%;
+            max-width: 800px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            margin: 0 auto;
         }
         .pdf-viewer {
-            width: 100%; /* Ocupa el 100% del contenedor */
+            width: 100%;
             height: 80vh;
         }
         .logos {
@@ -32,7 +32,11 @@
             margin: 0 10px;
         }
         .logo img[src="instagram.png"] {
-            border-radius: 15px;
+            border-radius: 30%;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
