@@ -12,22 +12,32 @@
             background-image: url('fondo.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center; 
+            background-position: center;
         }
         .container {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .pdf-container {
+            width: 100%;
+            max-width: 80vw;
+            aspect-ratio: 210 / 297;
+            position: relative;
         }
         .pdf-viewer {
             width: 100%;
-            height: 80vh;
-            aspect-ratio: 210/297;
-            position: relative;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #ccc;
         }
         .logos {
             margin-top: 20px;
@@ -36,13 +46,15 @@
             margin: 0 10px;
         }
         .logo img[src="instagram.png"] {
-            border-radius: 30%;
+            border-radius: 15px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <iframe class="pdf-viewer" src="Kafka-05.pdf"></iframe>
+        <div class="pdf-container">
+            <iframe class="pdf-viewer" src="Kafka-05.pdf"></iframe>
+        </div>
         <div class="logos">
             <a href="https://www.instagram.com/kajamarca.producciones/" class="logo">
                 <img src="instagram.png" alt="Logo 1" width="100" height="100">
