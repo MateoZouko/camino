@@ -11,16 +11,18 @@
             padding: 0;
         }
         .container {
-            width: 100%;
+            width: 80%; /* Reducido al 80% del ancho de la ventana gráfica */
+            max-width: 800px; /* Ancho máximo para evitar que el PDF se estire demasiado en pantallas grandes */
             height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
         }
         .pdf-viewer {
-            width: 80%;
+            width: 100%; /* Ocupa el 100% del contenedor */
             height: 80vh;
         }
         .logos {
@@ -37,7 +39,7 @@
 <body>
     <div class="container">
         <div class="pdf-container">
-            <iframe src="https://drive.google.com/file/d/1nwUApX5IkQuAvVG1M2qDF3NZLmCfirZa/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1nwUApX5IkQuAvVG1M2qDF3NZLmCfirZa/preview" class="pdf-viewer" allow="autoplay"></iframe>
         </div>
         <div class="logos">
             <a href="https://www.instagram.com/kajamarca.producciones/" class="logo">
