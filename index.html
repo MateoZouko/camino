@@ -19,14 +19,6 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        .pdf-container {
-            width: 100%;
-            overflow: auto;
-        }
-        .pdf-viewer {
-            width: 100%;
-            min-height: 600px;
-        }
         .logos {
             margin-top: 20px;
             text-align: center;
@@ -43,10 +35,7 @@
 <body>
     <div class="container">
         <div class="pdf-container">
-            <object class="pdf-viewer" data="Kafka-05.pdf" type="application/pdf">
-                <!-- Fallback content or message for browsers that do not support PDF embedding -->
-                <p>It appears you don't have a PDF plugin for this browser.
-                   You can <a href="Kafka-05.pdf">click here to download the PDF file.</a></p>
+            <iframe src="https://drive.google.com/file/d/1nwUApX5IkQuAvVG1M2qDF3NZLmCfirZa/preview" width="640" height="480" allow="autoplay"></iframe>
             </object>
         </div>
         <div class="logos">
